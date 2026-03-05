@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*TODO Section HERO */
+/* #sections-box{
+    padding-left: 1%;
+    padding-right: 1%;
+} */
+/*?Section*/
+#hero{ 
+  position: relative;
+  height: 125vh;
+  width: 100%;
+  overflow: hidden;
+  
+}
+
+/*?(img) box-chess-hero*/
+.imgchess-hero{
+  display: flex;
+  position: absolute;
+  top: 48%;
+  left: 50%; 
+  width: 104%;
+  height: 105%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/*?(Div) Hero*/
+#carrossel-hero {
+ position: absolute;
+ top: -35%;
+ left: 50%;
+ width: 90%;
+ height: 115%;
+ transform: translate(-50%, 50%);
+
+ z-index: 1;
+}
+
+/*?(Div) carrossel-hero*/
+.box-img-hero {
+  display: flex; 
+  height: 100%;
+  animation: deslizar 30s linear infinite;
+
+}
+
+/*?(img) box-img-hero */
+.slide {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@keyframes deslizar {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-300%);
+  }
+} 
+
+/*TODO Section HERO*/
+
+/*TODO Section INICIO*/
+
+#inicio{
+     position: relative;
+     height: 125vh;
+     width: 100%;
+     background-color:rgb(255, 255, 255);
+   
+}
+.box-secao{
+    position: relative;
+    height: 100%;
+    width: 96%;
+}
+
+.icon-ps-secao{
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    height: 15%;
+    width: 12%;
+}
+
+
+.info-secao{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*TODO Section INICIO*/
+
+
+#diferenciais{
+     border-top: solid 1px rgb(61, 61, 61);
+     position: relative;
+     height: 125vh;
+     width: 100%;
+     
+}
+
+.icon2-df{
+    position: relative;
+    height: 100%;
+    width: 96%;
+}
+
+.icon-ps-df{
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    height: 15%;
+    width: 12%;
+}
+
+.texto-df{
+    position: absolute;
+    top: 15%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.mapa{
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.mapa iframe{
+    width: 290%;
+    height: 80vh;
+}
+
+
+
+#turismo{
+     border-top: solid 1px rgb(61, 61, 61);
+     position: relative;
+     height: 125vh;
+     width: 100%;
+}
+
+.aoredor-secao{
+    position: relative;
+    height: 100%;
+    width: 96%;
+}
+
+.aoredoricon-secao{
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    height: 15%;
+    width: 12%;
+}
+
+#aoredor-carrosssel-secao {
+  position: relative;
+  width: 70%;
+  height: 60%;
+  top: -57%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  border-radius:2% ;
+  overflow: hidden;
+}
+
+/* faixa de imagens */
+.aoredor-img-carro-secao {
+  display: flex;
+  transition: transform 0.8s ease;
+}
+
+/* imagens */
+.aoredor-img-carro-secao img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* setas */
+.seta {
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: rgb(2, 79, 167);
+  color: white;
+  border: none;
+
+  width: 7%;
+  aspect-ratio: 1/1;
+
+  cursor: pointer;
+  z-index: 3;
+  
+ animation: pulseSeta 2.2s infinite;
+}
+
+.esquerda { left: 1%; }
+.direita { right: 1%; }
+
+@keyframes pulseSeta {
+  0% {
+    transform: translateY(-30%) scale(1);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.25);
+  }
+
+  50% {
+    transform: translateY(-30%) scale(1.08);
+    box-shadow: 0 0 0 1% rgba(0,0,0,0.15);
+  }
+
+  100% {
+    transform: translateY(-30%) scale(1);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.25);
+  }
+}
+
+#locaisimg-seca{
+    position: relative;
+    
+}
+
+.locais-secao{
+    position: absolute;
+    top: 90%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+}

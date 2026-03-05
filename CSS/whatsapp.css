@@ -1,0 +1,37 @@
+.whatsapp-float {
+  position: fixed;
+  bottom: -6%;
+  right: -2%;
+
+  width: 15%;
+  aspect-ratio: 1/1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+}
+
+.whatsapp-float img {
+  width: 84%;
+  height: 102%;
+  border-radius: 100%;
+  animation: pulse 2s infinite;
+}
+
+/* pulsar */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.12);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
