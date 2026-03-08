@@ -15,7 +15,6 @@ body {
 }
 
 /** Section Hero 01 */
-
 .section-hero-01 {
 	position: relative;
 	height: 120vh;
@@ -23,6 +22,7 @@ body {
 	overflow: hidden;
 }
 
+/*~Header da seção hero 01 */
 .header-section-01 {
 	position: relative;
 	background-color: #f5f5f5;
@@ -30,7 +30,6 @@ body {
 	text-align: center;
 	height: 25vh;
 }
-
 
 .sub-cont-header {
 	margin-left: 12%;
@@ -72,7 +71,6 @@ body {
 	height: auto;
 }
 
-
 .title-text-center {
 	margin-top: 20%;
 	margin-right: 10%;
@@ -86,7 +84,6 @@ body {
 	width: 80%;
 	height: auto;
 }
-
 
 /*?(Div) Hero*/
 #carrossel-hero {
@@ -140,11 +137,11 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 80%;
+	width: 100%;
 	height: 100%;
 	margin-top: 6%;
 	align-items: start;
-	gap: 30px;
+	gap: 50px;
 }
 
 .itens-info {
@@ -153,8 +150,13 @@ body {
 	gap: 5px;
 }
 
+.itens-info .itens-info-02 {
+	width: 100px;
+}
+
 .itens-info .itens-info-03 {
 	font-size: clamp(0.8rem, 2vw, 1.8rem);
+	width: 80px;
 }
 
 .itens-info img {
@@ -168,3 +170,49 @@ body {
 	width: 150px;
 	height: 100%;
 }
+/** Section Hero 01 */
+
+/** Section Hero 02 */
+.section-hero-02 {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cont-logoIcons {
+	position: relative;
+	display: flex;
+	float: left;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 100px;
+}
+
+.iconsAjust-sect02 {
+	margin-bottom: 100px;
+}
+
+.cont-logoIcons button {
+	position: absolute;
+	top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza no centro do pai */
+	background-color: #004c83;
+	width: 140px;
+	height: 140px;
+	border: none;
+	text-decoration: none;
+}
+
+.cont-logoIcons img {
+	width: 150px;
+	height: auto;
+	margin-top: 20px;
+}
+/** Section Hero 02 */
