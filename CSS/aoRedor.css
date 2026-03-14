@@ -15,7 +15,10 @@
 }
 
 /** Supermercado */
-.sub-secao-aoRedor-supermercados {
+.sub-secao-aoRedor-supermercados,
+.sub-secao-aoRedor-restaurantes,   /* se for criar depois */
+.sub-secao-aoRedor-farmacias,
+.sub-secao-aoRedor-postos {
   width: 100%;
   justify-content: center;
   align-items: center;

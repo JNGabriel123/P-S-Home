@@ -3,14 +3,16 @@ const icones = document.querySelectorAll(".item-icone"); // ← mude para sua cl
 
 // Pega a área que expande
 const areaExpansivel = document.getElementById("areaExpansivel");
-const subSecaoAoRedorSupermercados = document.getElementById("sub-secao-aoRedor-supermercados");
+const subSecaoAoRedorSupermercados = document.getElementById(
+	"sub-secao-aoRedor-supermercados",
+);
 
 // Guarda qual conteúdo está aberto no momento
 let conteudoAtual = null;
 
 // Conteúdos (você coloca o HTML real de cada um aqui)
 const conteudos = {
-  turismo: `
+	turismo: `
     <section class="secao-turismo">
       <img src="Icons/icons-sect02-02.png" alt="" class="img-icon-slider" />
       <div class="slider">
@@ -138,7 +140,7 @@ const conteudos = {
     </section>
   `,
 
-  aoredor: `
+	aoredor: `
     <section class="secao-aoRedor">
       <div class="cont-aoRedor">
         <div class="cont-iconLocaliza-aoRedor">
@@ -150,15 +152,15 @@ const conteudos = {
             <img src="Icons/icon-aoRedor-01.png" alt="" />
             <p>Supermercados</p>
           </div>
-          <div class="caixa-icons-aoRedor sub-icone" data-subsecao="supermercados">
+          <div class="caixa-icons-aoRedor sub-icone" data-subsecao="restaurantes">
             <img src="Icons/icon-aoRedor-02.png" alt="" />
             <p>Restaurantes</p>
           </div>
-          <div class="caixa-icons-aoRedor sub-icone" data-subsecao="supermercados">
+          <div class="caixa-icons-aoRedor sub-icone" data-subsecao="farmacias">
             <img src="Icons/icon-aoRedor-03.png" alt="" />
             <p>Farmácias</p>
           </div>
-          <div class="caixa-icons-aoRedor sub-icone" data-subsecao="supermercados">
+          <div class="caixa-icons-aoRedor sub-icone" data-subsecao="postos">
             <img src="Icons/icon-aoRedor-04.png" alt="" />
             <p>Postos</p>
           </div>
@@ -176,91 +178,81 @@ const conteudos = {
       </div>
     </section>
   `,
-
-  
 };
 
 // Função que abre/troca o conteúdo
 function mostrarConteudo(nome) {
-  // Se clicou no mesmo ícone que já está aberto → fecha tudo
-  if (conteudoAtual === nome && areaExpansivel.classList.contains("aberto")) {
-    areaExpansivel.classList.remove("aberto");
-    subSecaoAoRedorSupermercados.classList.remove("ativo"); // Esconde a sub-seção de supermercados
-    areaExpansivel.style.maxHeight = "0px";
-    conteudoAtual = null;
-    return;
-  }
+	// Se clicou no mesmo ícone que já está aberto → fecha tudo
+	if (conteudoAtual === nome && areaExpansivel.classList.contains("aberto")) {
+		areaExpansivel.classList.remove("aberto");
+		subSecaoAoRedorSupermercados.classList.remove("ativo"); // Esconde a sub-seção de supermercados
+		areaExpansivel.style.maxHeight = "0px";
+		conteudoAtual = null;
+		return;
+	}
 
-  // Coloca o conteúdo correspondente
-  if (conteudos[nome]) {
-    areaExpansivel.innerHTML = conteudos[nome];
-    
-  } else {
-    areaExpansivel.innerHTML =
-      '<div class="conteudo-interno"><p>Conteúdo não encontrado</p></div>';
-  }
+	// Coloca o conteúdo correspondente
+	if (conteudos[nome]) {
+		areaExpansivel.innerHTML = conteudos[nome];
+	} else {
+		areaExpansivel.innerHTML =
+			'<div class="conteudo-interno"><p>Conteúdo não encontrado</p></div>';
+	}
 
-  // iniciarSlider();
+	// iniciarSlider();
 
-  // Abre / expande
-  areaExpansivel.classList.add("aberto");
-  const alturaReal = areaExpansivel.scrollHeight + 50; // margem de segurança
-  areaExpansivel.style.maxHeight = alturaReal + "px";
+	// Abre / expande
+	areaExpansivel.classList.add("aberto");
+	const alturaReal = areaExpansivel.scrollHeight + 50; // margem de segurança
+	areaExpansivel.style.maxHeight = alturaReal + "px";
 
-  // Marca qual está aberto
-  conteudoAtual = nome;
+	// Marca qual está aberto
+	conteudoAtual = nome;
 
-
-  // ← NOVO: Rola suavemente até o conteúdo ficar visível
-  setTimeout(() => {
-    areaExpansivel.scrollIntoView({
-      behavior: "smooth", // animação suave
-      block: "start", // alinha o topo do elemento com o topo da viewport
-      inline: "nearest",
-    });
-  }, 500);
+	// ← NOVO: Rola suavemente até o conteúdo ficar visível
+	setTimeout(() => {
+		areaExpansivel.scrollIntoView({
+			behavior: "smooth", // animação suave
+			block: "start", // alinha o topo do elemento com o topo da viewport
+			inline: "nearest",
+		});
+	}, 500);
 }
-
-
 
 // Adiciona o evento de clique em cada ícone
 icones.forEach((icone) => {
-  icone.addEventListener("click", () => {
-    const nome = icone.getAttribute("data-conteudo");
-    mostrarConteudo(nome);
-  });
+	icone.addEventListener("click", () => {
+		const nome = icone.getAttribute("data-conteudo");
+		mostrarConteudo(nome);
+	});
 });
-
 
 //* Controle de class expande e contrai para o conteúdo "Ao Redor" *//
 
-
-
-
 // Controle dos sub-ícones dentro de "Ao Redor"
-document.addEventListener('click', function(e) {
-  const subIcone = e.target.closest('.sub-icone');
-  if (!subIcone) return;
+document.addEventListener("click", function (e) {
+	const subIcone = e.target.closest(".sub-icone");
+	if (!subIcone) return;
 
-  const subsecao = subIcone.dataset.subsecao;
-  if (!subsecao) return;
+	const subsecao = subIcone.dataset.subsecao;
+	if (!subsecao) return;
 
-  // Esconde todas as sub-seções
-  document.querySelectorAll('[class^="sub-secao-aoRedor-"]').forEach(el => {
-    el.classList.remove('ativo');
-  });
+	// Esconde todas as sub-seções
+	document.querySelectorAll('[class^="sub-secao-aoRedor-"]').forEach((el) => {
+		el.classList.remove("ativo");
+	});
 
-  // Mostra a escolhida
-  const secaoAlvo = document.querySelector(`.sub-secao-aoRedor-${subsecao}`);
-  if (secaoAlvo) {
-    secaoAlvo.classList.add('ativo');
-    
-    // Scroll suave até a seção que apareceu
-    setTimeout(() => {
-      secaoAlvo.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }, 100);
-  }
+	// Mostra a escolhida
+	const secaoAlvo = document.querySelector(`.sub-secao-aoRedor-${subsecao}`);
+	if (secaoAlvo) {
+		secaoAlvo.classList.add("ativo");
+
+		// Scroll suave até a seção que apareceu
+		setTimeout(() => {
+			secaoAlvo.scrollIntoView({
+				behavior: "smooth",
+				block: "start",
+			});
+		}, 100);
+	}
 });
