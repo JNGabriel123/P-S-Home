@@ -1,13 +1,22 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+/* Esconde todas as sub-seções por padrão */
+.sub-secao-aoRedor-supermercados,
+.sub-secao-aoRedor-restaurantes,   /* se for criar depois */
+.sub-secao-aoRedor-farmacias,
+.sub-secao-aoRedor-postos {
+  display: none;
 }
 
+/* Quando estiver ativa */
+.sub-secao-aoRedor-supermercados.ativo,
+.sub-secao-aoRedor-restaurantes.ativo,
+.sub-secao-aoRedor-farmacias.ativo,
+.sub-secao-aoRedor-postos.ativo {
+  display: flex;
+}
+
+/** Supermercado */
 .sub-secao-aoRedor-supermercados {
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -80,3 +89,4 @@
   top: -30px;
   left: 450px;
 }
+/** Supermercado */

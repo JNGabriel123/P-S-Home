@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.secao-aoRedor {
+  width: 100%;
+  min-height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-aoRedor {
+  width: 80%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6vh;
+}
+
+.cont-iconLocaliza-aoRedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 6vh;
+}
+
+.cont-iconLocaliza-aoRedor img {
+  width: 60px;
+  height: auto;
+}
+
+.cont-iconLocaliza-aoRedor h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: #002570;
+}
+
+.sub-cont-aoRedor {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sub-cont-aoRedor img {
+  width: 50%;
+  height: auto;
+}
+
+.caixa-icons-aoRedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  img {
+    transition: all 0.3s ease;
+  }
+}
+
+.caixa-icons-aoRedor img:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+
+.caixa-icons-aoRedor p {
+  font-size: clamp(1.5rem, 2.2vw, 2.8rem);
+  color: #002570;
+}
+
+.cont-text-aoRedor {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.cont-text-aoRedor h3 {
+  color: #002570;
+  margin-bottom: 1.5rem;
+}
