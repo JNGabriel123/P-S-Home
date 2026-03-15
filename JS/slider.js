@@ -1,59 +1,64 @@
-//* Carrossel de imagens da section turismo
-function iniciarSlider() {
+function initUmCarousel(sliderContainer) {
+  if (!sliderContainer) return;
 
-const slides = document.querySelector(".slides");
-const slide = document.querySelectorAll(".slide");
+  const slidesWrapper = sliderContainer.querySelector('.slides');
+  const slides = sliderContainer.querySelectorAll('.slide');
+  const btnNext = sliderContainer.querySelector('.direita');
+  const btnPrev = sliderContainer.querySelector('.esquerda');
 
-const next = document.querySelector(".direita");
-const prev = document.querySelector(".esquerda");
-
-let index = 0;
-let tempo = 4000;
-let autoplay;
-
-function mostrarSlide() {
-  slides.style.transform = `translateX(-${index * 100}%)`;
-}
-
-function proximo() {
-  index++;
-
-  if (index >= slide.length) {
-    index = 0;
+  // Se faltar algum elemento essencial → ignora silenciosamente
+  if (!slidesWrapper || slides.length === 0 || !btnNext || !btnPrev) {
+    console.warn("Carrossel incompleto neste container:", sliderContainer);
+    
+    return;
+    
   }
 
-  mostrarSlide();
-}
+  let currentIndex = 0;
+  let autoplayTimer;
 
-function anterior() {
-  index--;
-
-  if (index < 0) {
-    index = slide.length - 1;
+  function showSlide() {
+    slidesWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
   }
 
-  mostrarSlide();
-}
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide();
+  }
 
-function iniciarAuto() {
-  autoplay = setInterval(proximo, tempo);
-}
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide();
+  }
 
-function resetAuto() {
-  clearInterval(autoplay);
-  iniciarAuto();
-}
+  function startAutoplay() {
+    if (autoplayTimer) clearInterval(autoplayTimer);
+    autoplayTimer = setInterval(nextSlide, 4000); // 4 segundos
+  }
 
-next.addEventListener("click", () => {
-  proximo();
-  resetAuto();
-});
+  function resetAutoplay() {
+    clearInterval(autoplayTimer);
+    startAutoplay();
+  }
 
-prev.addEventListener("click", () => {
-  anterior();
-  resetAuto();
-});
+  // Remove listeners antigos para evitar duplicação
+  btnNext.removeEventListener('click', nextSlide);
+  btnPrev.removeEventListener('click', prevSlide);
 
-iniciarAuto();
+  btnNext.addEventListener('click', () => {
+    nextSlide();
+    resetAutoplay();
+  });
 
+  btnPrev.addEventListener('click', () => {
+    prevSlide();
+    resetAutoplay();
+  });
+
+  // Inicia
+  showSlide();
+  startAutoplay();
+
+  // Retorna função para limpar o timer (útil quando fecha a seção)
+  return () => clearInterval(autoplayTimer);
 }

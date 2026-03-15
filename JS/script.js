@@ -366,11 +366,12 @@ function mostrarConteudoPrincipal(nome) {
 
   // Scroll suave
   setTimeout(() => {
-    areaExpansivel.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
+    const todosSliders = areaExpansivel.querySelectorAll(".slider");
+    console.log("Número de carrosséis encontrados:", todosSliders.length); // ← para debug
+    todosSliders.forEach((container) => {
+      initUmCarousel(container);
     });
-  }, 400);
+  }, 200);
 }
 
 // Eventos dos ícones principais
@@ -419,3 +420,5 @@ document.addEventListener("click", function (e) {
     });
   }, 150);
 });
+
+

@@ -7,10 +7,12 @@
 
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/aoRedor.css" />
+    <link rel="stylesheet" href="CSS/aptsSect.css" />
+    <link rel="stylesheet" href="CSS/whatsapp.css" />
   </head>
   <body>
     <div class="container">
-      <!-- primeira section -->
+      <!--* section 01 -->
       <section class="section-hero-01">
         <div class="cont-sect-01">
           <div class="header-section-01">
@@ -87,6 +89,7 @@
           </div>
         </div>
       </section>
+      <!--* section 01 -->
 
       <!--* section 02 -->
       <section class="section-hero-02">
@@ -101,6 +104,7 @@
           <!--* adcionar depois = data-conteudo="turismo" -->
           <div
             class="cont-logoIcons item-icone iconsAjust-sect02 ajuste-margIcons-sect02"
+            data-conteudo="turismo"
           >
             <a href="#areaExpansivel"
               ><img src="Icons/icons-sect02-02.png" alt=""
@@ -119,13 +123,17 @@
 
           <br />
 
-          <div class="cont-logoIcons item-icone iconsAjust-sect02 iten04-sect02"
-            data-conteudo="regrasCasa">
+          <div
+            class="cont-logoIcons item-icone iconsAjust-sect02 iten04-sect02"
+            data-conteudo="regrasCasa"
+          >
             <img src="Icons/icons-sect02-04.png" alt="" />
             <h3>Regras da Casa</h3>
           </div>
-          <div class="cont-logoIcons item-icone iconsAjust-sect02 ajuste-margIcons-sect02"
-            data-conteudo="contatos">
+          <div
+            class="cont-logoIcons item-icone iconsAjust-sect02 ajuste-margIcons-sect02"
+            data-conteudo="contatos"
+          >
             <img src="Icons/icons-sect02-05.png" alt="" />
             <h3>Contato</h3>
           </div>
@@ -135,7 +143,10 @@
           </div>
         </div>
       </section>
+      <!--* section 02 -->
       <div class="area-conteudo-expansivel" id="areaExpansivel"></div>
+
+      <!--*sub seções -->
 
       <!--* seção supermercado  -->
       <div id="sub-secao-aoRedor-srfp">
@@ -513,6 +524,28 @@
       </div>
     </div>
 
+    <!--* section 03 -->
+    <section class="section-hero-03">
+      <h1 class="text-title-sect03">Apartamentos</h1>
+      <div class="cont-sect-03">
+        <div class="box-img-apts item-icone-apto" data-apto="apt01">
+          <img src="Icons/icon-apt-101.png" alt="" />
+          <h1>Apartamento 101</h1>
+        </div>
+        <div class="box-img-apts item-icone-apto" data-apto="apt02">
+          <img src="Icons/icon-apt-102.png" alt="" />
+          <h1>Apartamento 102</h1>
+        </div>
+        <div class="box-img-apts item-icone-apto" data-apto="apt03">
+          <img src="Icons/icon-apt-103.png" alt="" />
+          <h1>Apartamento 103</h1>
+        </div>
+      </div>
+    </section>
+    <!-- Área expansível SÓ PARA APARTAMENTOS (abaixo da grade) -->
+    <div class="area-conteudo-expansivel-apto" id="areaExpansivelApto"></div>
+    <!--* section 03 -->
+
     <!--* modal section 02 - seja bem vindo  -->
     <div id="modalShow" class="mstr-modal">
       <div class="cont-modal">
@@ -620,6 +653,18 @@
       </div>
     </div>
 
+    <!--* whats app  -->
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/6599809-0170?text=Ol%C3%A1!%20Quero%20saber%20mais"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Abrir conversa no WhatsApp"
+    >
+      <img src="Icons/whatsappicon.png" alt="" />
+    </a>
+    <!--* whats app  -->
+
     <!--* scripts de JS para as demais funções -->
     <script>
       const btnShowModal = document.getElementById("btn-show-modal");
@@ -678,5 +723,6 @@
     </script>
     <script src="JS/script.js"></script>
     <script src="JS/slider.js" defer></script>
+    <script src="JS/apto.js"></script>
   </body>
 </html>

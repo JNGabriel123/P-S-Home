@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /** Container */
@@ -237,6 +237,56 @@ body {
   margin-top: 20px;
   font-size: clamp(1rem, 2vw, 1.7rem);
 }
+/** Section Hero 02 */
+
+/** Section Hero 03 */
+.section-hero-03 {
+  color: white;
+  background-color: #2e3cbc;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-hero-03 .text-title-sect03 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  margin-bottom: 120px;
+}
+
+.cont-sect-03 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  gap: 120px;
+}
+
+.box-img-apts {
+  gap: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box-img-apts img {
+  width: 200px;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.box-img-apts img:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+
+
+
+/** Section Hero 03 */
 
 /*? modal  */
 
@@ -410,7 +460,7 @@ body {
 
 .seta p {
   margin: 0 0 3px 0;
-  
+
   border-radius: 50%;
 }
 
@@ -582,7 +632,6 @@ body {
   gap: 30px;
 }
 
-
 .box-check {
   gap: 10px;
   display: flex;
@@ -616,7 +665,6 @@ body {
   gap: 20px;
   color: #001c53;
   justify-content: left;
-  
 }
 
 .box-text-regrasCasa {
@@ -673,21 +721,21 @@ body {
 
 /* Dentro do modal - controle de visibilidade */
 .conteudo-mapa {
-  display: block;          /* ou none, dependendo do inicial */
+  display: block; /* ou none, dependendo do inicial */
 }
 
 .conteudo-mapa {
-  display: none;           /* começa escondido */
+  display: none; /* começa escondido */
 }
 
 /* Estilo para o mapa ficar responsivo e bonito */
 .mapa-wrapper {
   width: 100%;
-  height: 450px;           /* ajuste conforme quiser */
+  height: 450px; /* ajuste conforme quiser */
   margin: 20px 0;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .mapa-wrapper iframe {
@@ -727,8 +775,12 @@ body {
   color: white;
 }
 
-.btn-mapa:hover { background: #003366; }
-.btn-voltar:hover { background: #444; }
+.btn-mapa:hover {
+  background: #003366;
+}
+.btn-voltar:hover {
+  background: #444;
+}
 
 /*? modal  */
 
@@ -736,10 +788,12 @@ body {
 .area-conteudo-expansivel {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.45s ease-out, padding 0.45s ease-out;
+  transition:
+    max-height 0.45s ease-out,
+    padding 0.45s ease-out;
   padding: 0 20px;
-  background: #f9f9f9;           /* ou a cor que combina com seu site */
-  border-radius: 0 0 12px 12px;  /* arredonda só embaixo se quiser */
+  background: #f9f9f9; /* ou a cor que combina com seu site */
+  border-radius: 0 0 12px 12px; /* arredonda só embaixo se quiser */
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
@@ -753,7 +807,9 @@ body {
 .conteudo-interno {
   opacity: 0;
   transform: translateY(15px);
-  transition: opacity 0.4s ease 0.1s, transform 0.4s ease 0.1s;
+  transition:
+    opacity 0.4s ease 0.1s,
+    transform 0.4s ease 0.1s;
 }
 
 .area-conteudo-expansivel.aberto .conteudo-interno {
@@ -761,6 +817,40 @@ body {
   transform: translateY(0);
 }
 /** ajuste expansivel */
+
+/** ajuste expansivel apto */
+.area-conteudo-expansivel-apto {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.45s ease-out,
+    padding 0.45s ease-out;
+  padding: 0 20px;
+  background: #f9f9f9; /* ou a cor que combina com seu site */
+  border-radius: 0 0 12px 12px; /* arredonda só embaixo se quiser */
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.area-conteudo-expansivel.aberto {
+  padding: 25px 20px;
+}
+
+/* Conteúdo interno (cada página) */
+.conteudo-interno {
+  opacity: 0;
+  transform: translateY(15px);
+  transition:
+    opacity 0.4s ease 0.1s,
+    transform 0.4s ease 0.1s;
+}
+
+.area-conteudo-expansivel-apto.aberto .conteudo-interno {
+  opacity: 1;
+  transform: translateY(0);
+}
+/** ajuste expansivel apto */
 
 /** Section Hero 02 */
 
