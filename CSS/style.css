@@ -16,12 +16,14 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
+/** Container */
 
 /** Section Hero 01 */
 .section-hero-01 {
   position: relative;
-  height: 120vh;
+  min-height: 130vh;
   width: 100%;
   overflow: hidden;
 }
@@ -30,132 +32,119 @@ body {
 .header-section-01 {
   position: relative;
   background-color: #f5f5f5;
-  padding: 20px;
+  padding: clamp(1rem, 3vw, 2rem);
   text-align: center;
-  height: 25vh;
-}
-
-.sub-cont-header {
-  margin-left: 12%;
-  align-items: center;
+  z-index: 10;
 }
 
 .sub-cont-header {
   display: flex;
-  justify-content: right;
-  align-items: end;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+  margin: 0 auto 0 22%;
+  max-width: 1400px;
 }
 
 .header-section-01 h1 {
-  margin-top: 45px;
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-top: clamp(1.5rem, 5vw, 3rem);
+  font-size: clamp(1.6rem, 5vw, 3rem);
   color: #004c83;
-  align-items: center;
 }
 
 .header-section-01 img {
-  width: 50px;
+  width: clamp(40px, 10vw, 70px);
   height: auto;
-  margin-left: 80px;
-}
-
-.sub-cont-header {
-  margin-right: 5%;
 }
 
 .item-img-logo {
   position: absolute;
-  top: 5%;
-  margin-left: 2%;
-  z-index: 3;
+  top: 1.5rem;
+  left: 5%;
+  z-index: 15;
 }
 
 .item-img-logo img {
-  width: 250px;
+  width: clamp(140px, 35vw, 280px);
   height: auto;
 }
 
 .title-text-center {
-  margin-top: 20%;
-  margin-right: 10%;
-  margin-left: auto;
-  margin-bottom: auto;
   position: absolute;
-  z-index: 4;
+  top: 230%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 12;
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
 }
 
 .title-text-center img {
-  width: 80%;
+  width: 100%;
   height: auto;
+  max-width: 900px;
 }
 
-/*?(Div) Hero*/
 #carrossel-hero {
-  position: relative;
   position: absolute;
-  top: -40%;
-  left: 20%;
-  width: 90%;
-  height: 120%;
-  transform: translate(-50%, 50%);
+  inset: 0;
   z-index: 1;
 }
 
-/*?(Div) carrossel-hero*/
 .box-img-hero {
   display: flex;
   height: 100%;
-  animation: deslizar 30s linear infinite;
+  animation: deslizar 36s linear infinite;
 }
 
-/*?(img) box-img-hero */
 .slide {
-  width: 100%;
-  height: 60%;
+  min-width: 100%;
+  height: 100%;
   object-fit: cover;
-  flex-shrink: 0;
 }
 
 @keyframes deslizar {
-  from {
+  0% {
     transform: translateX(0);
   }
-  to {
+  100% {
     transform: translateX(-300%);
   }
 }
 
 .cont-itens-info {
-  margin-top: 36%;
   position: absolute;
-  z-index: 5;
-  background-color: rgb(41, 0, 128);
-  width: 100%;
-  height: 26%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 8;
+  background: rgb(41, 0, 128);
+  padding: clamp(1.5rem, 4vw, 2.5rem) 5%;
+  color: white;
 }
 
 .sub-cont-info {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin-top: 6%;
-  align-items: start;
-  gap: 50px;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .itens-info {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0.8rem;
+  min-width: 140px;
+  justify-content: center;
 }
 
 .itens-info .itens-info-02 {
-  width: 100px;
+  width: clamp(50px, 12vw, 80px);
+  height: auto;
 }
 
 .itens-info .itens-info-03 {
@@ -169,62 +158,45 @@ body {
 }
 
 .text-cont-info {
-  font-size: clamp(0.8rem, 2vw, 1.3rem);
-  color: white;
-  width: 150px;
-  height: 100%;
+  font-size: clamp(0.95rem, 3vw, 1.4rem);
+  line-height: 1.25;
 }
 /** Section Hero 01 */
 
 /** Section Hero 02 */
 .section-hero-02 {
-  position: relative;
-  height: 100vh;
+  min-height: 80vh;
   width: 100%;
-  overflow: hidden;
-  background-color: #f5f5f5;
+  background: #f5f5f5;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  padding: clamp(2rem, 5vw, 4rem) 5%;
 }
 
 .cont-sect-02 {
   margin-top: 120px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1400px;
 }
 
 .cont-logoIcons {
-  position: relative;
   display: flex;
-  float: left;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
   text-align: center;
-}
-
-.iconsAjust-sect02 {
-  margin-bottom: 100px;
-}
-
-.iten01-sect02 {
-  margin-left: 16px;
-  margin-right: 120px;
-}
-
-.iten04-sect02 {
-  margin-right: 100px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  float: left;
+  width: 300px;
+  margin-bottom: 60px;
 }
 
 .cont-logoIcons img {
-  width: 150px;
+  width: clamp(90px, 20vw, 160px);
   height: auto;
-  transition: all 0.3s ease;
-}
-
-.ajuste-margIcons-sect02 {
-  margin-right: 120px;
+  transition: transform 0.3s ease;
 }
 
 .cont-logoIcons img:hover {
@@ -234,167 +206,294 @@ body {
 }
 
 .cont-logoIcons h3 {
-  margin-top: 20px;
-  font-size: clamp(1rem, 2vw, 1.7rem);
+  font-size: clamp(1rem, 3vw, 1.6rem);
+  margin: 0;
 }
 /** Section Hero 02 */
 
-/** Section Hero 03 */
-.section-hero-03 {
-  color: white;
-  background-color: #2e3cbc;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+/** ajuste expansivel */
+.area-conteudo-expansivel {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.45s ease-out,
+    padding 0.45s ease-out;
+  padding: 0 5%;
+  background: #f9f9f9;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.section-hero-03 .text-title-sect03 {
-  font-size: clamp(2rem, 3vw, 2.5rem);
-  margin-bottom: 120px;
+.area-conteudo-expansivel.aberto {
+  padding: clamp(1.5rem, 4vw, 3rem) 5%;
+}
+/** ajuste expansivel */
+
+/*~ icone Ao Redor */
+/*? Esconde todas as sub-seções por padrão */
+.sub-secao-aoRedor-supermercados,
+.sub-secao-aoRedor-restaurantes,
+.sub-secao-aoRedor-farmacias,
+.sub-secao-aoRedor-postos {
+  display: none;
+  width: 100%;
+  padding: 2rem 5%;
+}
+
+/* Quando estiver ativa */
+.sub-secao-aoRedor-supermercados.ativo,
+.sub-secao-aoRedor-restaurantes.ativo,
+.sub-secao-aoRedor-farmacias.ativo,
+.sub-secao-aoRedor-postos.ativo {
+  display: block;
+}
+/*? Esconde todas as sub-seções por padrão */
+
+/** Section Hero 03 */
+
+.section-hero-03 {
+  padding: clamp(2rem, 5vw, 4rem) 5%;
+  text-align: center;
+  background-color: #2e3cbc;
+  color: white;
+}
+
+.text-title-sect03 {
+  font-size: clamp(1.8rem, 5vw, 3.2rem);
+  margin-bottom: 2rem;
 }
 
 .cont-sect-03 {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
-  color: #fff;
-  gap: 120px;
+  gap: clamp(1.5rem, 7vw, 6rem);
+  margin-top: 120px;
 }
 
 .box-img-apts {
-  gap: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  width: clamp(220px, 40vw, 320px);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
 }
 
-.box-img-apts img {
-  width: 200px;
-  height: auto;
-  transition: all 0.3s ease;
-}
-
-.box-img-apts img:hover {
+.box-img-apts:hover {
   cursor: pointer;
   transition: all 0.3s ease;
   transform: scale(1.1);
 }
 
+.box-img-apts img {
+  width: 60%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
 
+/** ajuste expansivel apto */
+.area-conteudo-expansivel-apto {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.45s ease-out,
+    padding 0.45s ease-out;
+  padding: 0 5%;
+  background: #f9f9f9;
+  margin: 1rem auto;
+  width: 100%;
+}
 
+.area-conteudo-expansivel.aberto {
+  padding: clamp(1.5rem, 4vw, 3rem) 5%;
+}
+/** ajuste expansivel apto */
+
+/*~ sub seção dos apartamentos  */
+.sect-apts-01-slides {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 140px;
+}
+
+/** =============================================
+**CARROSSEIS (principal e apartamentos)
+**============================================= */
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.esquerda {
+  left: 10px;
+}
+.direita {
+  right: 10px;
+}
+
+.seta:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.cont-itens-info-apt {
+  position: absolute;
+  z-index: 5000;
+  background-color: rgb(41, 0, 128);
+  width: 100%;
+  height: 20%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-cont-info-apt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
+  align-items: start;
+  gap: 20px;
+}
+
+.itens-info-apt {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.itens-info-apt .itens-info-02-apt {
+  width: 80px;
+}
+
+.itens-info-apt .itens-info-03-apt {
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
+  width: 80px;
+}
+
+.itens-info-apt img {
+  width: 50px;
+  height: auto;
+}
+
+.text-cont-info-apt {
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+  color: white;
+}
+/*~ sub seção dos apartamentos  */
 /** Section Hero 03 */
 
-/*? modal  */
-
-.mstr-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
+/**subceções Ao Redor */
+.sub-secao-aoRedor-supermercados,
+.sub-secao-aoRedor-restaurantes,
+.sub-secao-aoRedor-farmacias,
+.sub-secao-aoRedor-postos {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
 }
 
-.cont-modal {
-  /* background: rgb(229, 229, 229); */
-  padding: 2rem;
-  border-radius: 12px;
+.sub-cont-supMerc {
+  width: 95%;
+  min-height: 80vh;
+  display: flex;
+  margin-top: 6vh;
+}
+
+.cont-supMerc {
   width: 100%;
-  height: 92vh;
-  max-width: 1200px;
-  position: relative;
-  animation: aparecer 0.4s ease;
-  align-items: center;
-  justify-content: center;
-  display: block;
 }
 
-.fechar-modal {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 10px 15px;
-  background-color: rgb(250, 1, 1);
-  border: none;
-  border-radius: 50px;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.itens-modal {
-  width: 568px;
-  height: 300px;
-  float: left;
-  color: white;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.cxText-modal {
-  width: 80%;
-  height: 100%;
-  justify-content: center;
+.cont-loczIcon_textSupMerc {
+  width: 60%;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
+  margin-top: 6vh;
+  color: #004970;
+  margin-left: 6vw;
 }
 
-.titleAjust {
-  margin-bottom: 2rem;
+.icon-loczIcon_textSupMerc {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 6vh;
 }
 
-.pgph-modal {
-  font-size: clamp(0.8rem, 2vw, 1.5rem);
+.icon-loczIcon_textSupMerc img {
+  width: 60px;
+  height: auto;
 }
 
-.itnModal-01 {
-  background-color: #ff4d00;
+.lclcoes-SupMerc-item {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 6vh;
+  color: #004970;
+
+  span {
+    line-height: 1.2;
+  }
 }
 
-.itnModal-02 {
-  background-color: #06c5ff;
+.lclcoes-SupMerc-item img {
+  width: 20px;
+  height: auto;
 }
 
-.itnModal-03 {
-  background-color: #068fff;
+.lclcoes-SupMerc-item ul {
+  margin-left: 1rem;
 }
 
-.itnModal-04 {
-  background-color: #00c853;
+.cont-iframeMaps {
+  position: relative;
 }
 
-.itens-modal .titleCaixa-modal {
-  font-size: clamp(1rem, 3vw, 2.2rem);
-}
-
-.img-modal-center {
+.cont-iframeMaps img {
   width: 100px;
   height: auto;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: -30px;
+  left: 450px;
 }
-
-@keyframes aparecer {
-  from {
-    transform: scale(0.7);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
+/*~ icone Ao Redor */
+/** Section Hero 02 */
 
 /** Turismo  */
 
@@ -719,6 +818,111 @@ body {
 }
 /** Contatos */
 
+/*? modal  */
+
+.mstr-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.cont-modal {
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  height: 92vh;
+  max-width: 1200px;
+  position: relative;
+  animation: aparecer 0.4s ease;
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+
+.fechar-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  background-color: rgb(250, 1, 1);
+  border: none;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.itens-modal {
+  width: 568px;
+  height: 300px;
+  float: left;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cxText-modal {
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+.titleAjust {
+  margin-bottom: 2rem;
+}
+
+.pgph-modal {
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
+}
+
+.itnModal-01 {
+  background-color: #ff4d00;
+}
+
+.itnModal-02 {
+  background-color: #06c5ff;
+}
+
+.itnModal-03 {
+  background-color: #068fff;
+}
+
+.itnModal-04 {
+  background-color: #00c853;
+}
+
+.itens-modal .titleCaixa-modal {
+  font-size: clamp(1rem, 3vw, 2.2rem);
+}
+
+.img-modal-center {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes aparecer {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 /* Dentro do modal - controle de visibilidade */
 .conteudo-mapa {
   display: block; /* ou none, dependendo do inicial */
@@ -784,92 +988,144 @@ body {
 
 /*? modal  */
 
-/** ajuste expansivel */
-.area-conteudo-expansivel {
-  max-height: 0;
-  overflow: hidden;
-  transition:
-    max-height 0.45s ease-out,
-    padding 0.45s ease-out;
-  padding: 0 20px;
-  background: #f9f9f9; /* ou a cor que combina com seu site */
-  border-radius: 0 0 12px 12px; /* arredonda só embaixo se quiser */
-  margin: 0 auto;
-  width: 100%;
-  box-sizing: border-box;
+/* Ajustes no modal para mobile */
+@media (max-width: 768px) {
+  .cont-modal {
+    padding: 1.5rem;
+    max-height: 90vh;
+  }
+
+  .itens-modal {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-bottom: 1.5rem;
+  }
+
+  .cxText-modal {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .img-modal-center {
+    width: 80px;
+    position: static;
+    transform: none;
+    margin: 1rem auto;
+    display: block;
+  }
 }
 
-.area-conteudo-expansivel.aberto {
-  padding: 25px 20px;
+/* =============================================
+   MEDIA QUERIES – RESPONSIVIDADE
+============================================= */
+
+/* telas de notebooks */
+@media (max-width: 1500px) {
+  .header-section-01 {
+  }
+
+  .section-hero-01 {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .sub-cont-header {
+    gap: 1rem;
+    margin: 0 auto 0 25%;
+    max-width: 1400px;
+  }
+
+  .header-section-01 h1 {
+    margin-top: clamp(1.5rem, 5vw, 3rem);
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+  }
+
+  .header-section-01 img {
+    width: clamp(40px, 10vw, 50px);
+    height: auto;
+  }
+
+  .item-img-logo {
+    position: absolute;
+    top: 1.5rem;
+    left: 5%;
+    z-index: 15;
+  }
+
+  .item-img-logo img {
+    width: clamp(140px, 30vw, 270px);
+    height: auto;
+  }
+
+  .title-text-center img {
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+  }
+
+  .title-text-center {
+    top: 260%;
+  }
+
+  .sub-cont-info {
+    gap: clamp(1.5rem, 3vw, 2rem);
+    max-width: 1600px;
+    margin: 0;
+  }
+
+  .cont-itens-info {
+    padding: clamp(1.5rem, 3vw, 2rem) 2%;
+  }
 }
 
-/* Conteúdo interno (cada página) */
-.conteudo-interno {
-  opacity: 0;
-  transform: translateY(15px);
-  transition:
-    opacity 0.4s ease 0.1s,
-    transform 0.4s ease 0.1s;
-}
-
-.area-conteudo-expansivel.aberto .conteudo-interno {
-  opacity: 1;
-  transform: translateY(0);
-}
-/** ajuste expansivel */
-
-/** ajuste expansivel apto */
-.area-conteudo-expansivel-apto {
-  max-height: 0;
-  overflow: hidden;
-  transition:
-    max-height 0.45s ease-out,
-    padding 0.45s ease-out;
-  padding: 0 20px;
-  background: #f9f9f9; /* ou a cor que combina com seu site */
-  border-radius: 0 0 12px 12px; /* arredonda só embaixo se quiser */
-  margin: 0 auto;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.area-conteudo-expansivel.aberto {
-  padding: 25px 20px;
-}
-
-/* Conteúdo interno (cada página) */
-.conteudo-interno {
-  opacity: 0;
-  transform: translateY(15px);
-  transition:
-    opacity 0.4s ease 0.1s,
-    transform 0.4s ease 0.1s;
-}
-
-.area-conteudo-expansivel-apto.aberto .conteudo-interno {
-  opacity: 1;
-  transform: translateY(0);
-}
-/** ajuste expansivel apto */
-
-/** Section Hero 02 */
-
+/* Tablets e telas médias */
 @media (max-width: 1024px) {
   .header-section-01 {
-    padding: 1rem 4%;
+    padding: 1.5rem 5%;
   }
+
   .item-img-logo {
-    top: 1rem;
-    left: 4%;
+    position: static;
+    text-align: center;
+    margin: 1rem auto;
   }
+
   .title-text-center {
-    top: 28%;
+    position: static;
+    transform: none;
+    margin: 2rem auto;
   }
+
+  #carrossel-hero {
+    position: relative;
+    height: 60vh;
+    margin: 1rem 0;
+  }
+
   .cont-itens-info {
-    padding: 1.2rem 4%;
+    position: relative;
+    margin-top: 0;
+    height: auto;
+    padding: 2rem 5%;
+  }
+
+  .sub-cont-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .itens-info {
+    width: 80%;
+    justify-content: center;
+    text-align: center;
   }
 }
 
+/* Celulares (até 768px) */
 @media (max-width: 768px) {
   .section-hero-01 {
     min-height: 110vh;
@@ -878,63 +1134,55 @@ body {
   .sub-cont-header {
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
   }
 
   .header-section-01 h1 {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
-  .item-img-logo {
-    position: static;
-    margin: 1rem auto;
-    text-align: center;
+  .cont-logoIcons {
+    gap: 2rem;
   }
 
-  .title-text-center {
-    position: static;
-    transform: none;
-    margin: 2rem auto 1rem;
-    padding: 0 5%;
+  .cont-sect-03 {
+    flex-direction: column;
+    align-items: center;
   }
 
-  #carrossel-hero {
-    position: relative;
-    height: 55vh;
-    margin: 1rem 0;
+  .box-img-apts {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .seta {
+    padding: 8px 12px;
+    font-size: 1.5rem;
   }
 
   .cont-itens-info {
-    position: relative;
-    padding: 2rem 5%;
+    padding: 1.5rem 5%;
   }
 
-  .sub-cont-info {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.8rem;
-  }
-
-  .itens-info {
-    width: 100%;
-    justify-content: flex-start;
+  .text-cont-info {
+    font-size: clamp(0.9rem, 3.5vw, 1.2rem);
   }
 }
 
+/* Telas muito pequenas (≤ 480px) */
 @media (max-width: 480px) {
   .header-section-01 h1 {
     font-size: clamp(1.4rem, 6vw, 2.2rem);
   }
 
-  .slide {
-    object-fit: cover;
-  }
-
-  .cont-logoIcons {
-    gap: 3rem;
-  }
-
   .cont-logoIcons img {
-    width: clamp(80px, 22vw, 120px);
+    width: clamp(80px, 25vw, 120px);
+  }
+
+  .cont-sect-02 {
+    gap: 1.5rem;
+  }
+
+  .mapa-wrapper {
+    height: 300px;
   }
 }
