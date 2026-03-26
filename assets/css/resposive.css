@@ -630,6 +630,19 @@
 	.cont-text-sct06 p {
 		font-size: clamp(0.8rem, 1vw, 2rem);
 	}
+
+	/*?######################################*/
+	/*?               whatsapp               */
+	/*?######################################*/
+
+	.whatsapp-float {
+		width: 60px;
+		height: 60px;
+	}
+
+	.whatsapp-float img {
+		width: clamp(40px, 40vw, 60px);
+	}
 }
 
 /*######################################*/
@@ -809,5 +822,18 @@
 
 	.cont-text-sct06 p {
 		font-size: clamp(0.7rem, 1.5vw, 2rem);
+	}
+
+	/*?######################################*/
+	/*?               whatsapp               */
+	/*?######################################*/
+
+	.whatsapp-float {
+		width: 60px;
+		height: 60px;
+	}
+
+	.whatsapp-float img {
+		width: clamp(40px, 40vw, 60px);
 	}
 }

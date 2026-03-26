@@ -448,65 +448,41 @@ let aptoAtual = null;
 // Objeto com os conteúdos dos apartamentos (exemplo)
 const conteudosApto = {
 	apt01: `
-  <section class="sect-apts-01-slides">
+    <section class="sect-apts-01-slides">
       <img src="assets/img/icons/icon-apt-101.png" alt="" class="img-icon-slider" />
       <div class="cont-apts-slides">
         <div class="slider">
           <button class="seta esquerda"><p>&#10094;</p></button>
           <div class="slides">
-            <img
-              src="assets/img/img-carrosselApto/IMG_2341-apt1.jpeg"
-              class="slide active"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2346-apt1.jpeg"
-              class="slide"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2351-apt1.jpeg"
-              class="slide"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2354-apt1.jpeg"
-              class="slide"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2357-apt1.jpeg"
-              class="slide"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2359-apt1.jpeg"
-              class="slide"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2362-apt1.jpeg"
-              class="slide"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2366-apt1.jpeg"
-              class="slide"
-            />
-
-            <img
-              src="assets/img/img-carrosselApto/IMG_2371-apt1.jpeg"
-              class="slide"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2375-apt1.jpeg"
-              class="slide"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2406-apt1.jpeg"
-              class="slide"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2409-apt1.jpeg"
-              class="slide"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2411-apt1.jpeg"
-              class="slide"
-            />
+            <img src="assets/img/APTO101/IMG_2340.jpeg" class="slide slide-apto active" />
+            <img src="assets/img/APTO101/IMG_2344.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2345.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2346.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2348.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2350.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2351.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2353.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2355.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2357.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2359.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2362.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2363.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2368.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2370.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2371.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2373.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2377.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2380.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2381.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2384.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2386.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2388.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2394.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2397.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2403.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2405.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2408.jpeg" class="slide slide-apto" />
+            <img src="assets/img/APTO101/IMG_2410.jpeg" class="slide slide-apto" />
           </div>
           <button class="seta direita"><p>&#10095;</p></button>
         </div>
@@ -528,7 +504,7 @@ const conteudosApto = {
             </div>
             <span>
               <p>Cozinha</p>
-							<p>completa</p>
+              <p>completa</p>
             </span>
           </div>
           <div class="itens-info-apt-03">
@@ -545,7 +521,7 @@ const conteudosApto = {
             </div>
             <span>
               <p>Roupas de</p>
-							<p>cama e banho</p>
+              <p>cama e banho</p>
             </span>
           </div>
           <div class="itens-info-apt">
@@ -554,7 +530,7 @@ const conteudosApto = {
             </div>
             <span>
               <p>Campo Novo</p>
-							<p>do Parecis-MT</p>
+              <p>do Parecis-MT</p>
             </span>
           </div>
         </div>

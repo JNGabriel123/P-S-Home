@@ -97,14 +97,14 @@ body {
 }
 
 .slide {
-	min-width: clamp(100px, 80vw, 1200px);
+	max-width: clamp(80px, 80vw, 1200px);
 	height: 100%;
 	object-fit: cover;
 }
 
 .slide img {
-	width: clamp(100px, 50vw, 1200px);
-	height: 100%;
+	width: clamp(90px, 60vw, 600px);
+	height: auto;
 }
 
 @keyframes deslizar {
@@ -112,7 +112,7 @@ body {
 		transform: translateX(0);
 	}
 	100% {
-		transform: translateX(-300%);
+		transform: translateX(-560%);
 	}
 }
 /** container carousel */
@@ -439,4 +439,43 @@ body {
 		text-decoration: none;
 		color: #002c61fa;
 	}
+}
+
+/*!######################################*/
+/*!               WhatsApp               */
+/*!######################################*/
+
+.whatsapp-float {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 9999;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 80px;
+	background-color: #25d366;
+	color: white;
+	border-radius: 50%;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+	text-decoration: none;
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+	will-change: transform;
+}
+
+.whatsapp-float:hover,
+.whatsapp-float:focus {
+	transform: translateY(-4px) scale(1.03);
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+	outline: none;
+}
+
+.whatsapp-float:focus {
+	box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.18);
+}
+
+.whatsapp-float img {
+  width: 80px;
+  height: auto;
 }
