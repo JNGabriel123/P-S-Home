@@ -10,6 +10,10 @@ html {
 
 body {
 	font-family: "Poppins", sans-serif;
+	overflow-x: hidden; /* Impede rolagem horizontal */
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .container {
@@ -460,7 +464,9 @@ body {
 	border-radius: 50%;
 	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 	text-decoration: none;
-	transition: transform 0.15s ease, box-shadow 0.15s ease;
+	transition:
+		transform 0.15s ease,
+		box-shadow 0.15s ease;
 	will-change: transform;
 }
 
@@ -476,6 +482,6 @@ body {
 }
 
 .whatsapp-float img {
-  width: 80px;
-  height: auto;
+	width: 80px;
+	height: auto;
 }

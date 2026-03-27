@@ -625,6 +625,7 @@
 	}
 
 	.slide {
+		max-width: 100%;
 		max-height: clamp(400px, 700vh, 1800px);
 	}
 
@@ -634,22 +635,23 @@
 
 	/** sub-seção locais  */
 	.sub-cont-local {
-		gap: 0;
+		gap: 1rem;
 		width: 100%;
 		max-width: 100%;
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.local-cont {
-		width: clamp(300px, 180vw, 300px);
-		height: clamp(60px, 4vh, 60px);
+		width: clamp(300px, 180vw, 450px);
+		height: clamp(60px, 6vh, 90px);
 	}
 
 	.local-cont img {
-		width: clamp(10px, 2vw, 25px);
+		width: clamp(18px, 3vw, 30px);
 	}
 
 	.local-cont a {
-		font-size: clamp(1.2rem, 2vw, 2rem);
+		font-size: clamp(2.5rem, 2vw, 2rem);
 		margin-left: 10px;
 	}
 
