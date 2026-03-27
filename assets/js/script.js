@@ -451,38 +451,37 @@ const conteudosApto = {
     <section class="sect-apts-01-slides">
       <img src="assets/img/icons/icon-apt-101.png" alt="" class="img-icon-slider" />
       <div class="cont-apts-slides">
-        <div class="slider">
+        <div class="sliderApto">
           <button class="seta esquerda"><p>&#10094;</p></button>
-          <div class="slides">
-            <img src="assets/img/APTO101/IMG_2340.jpeg" class="slide slide-apto active" />
-            <img src="assets/img/APTO101/IMG_2344.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2345.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2346.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2348.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2350.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2351.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2353.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2355.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2357.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2359.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2362.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2363.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2368.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2370.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2371.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2373.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2377.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2380.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2381.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2384.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2386.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2388.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2394.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2397.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2403.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2405.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2408.jpeg" class="slide slide-apto" />
-            <img src="assets/img/APTO101/IMG_2410.jpeg" class="slide slide-apto" />
+          <div class="slidesApto">
+            <img src="assets/img/APTO101/IMG_2340.jpeg" class=" slide-apto active" />
+            <img src="assets/img/APTO101/IMG_2345.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2346.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2348.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2350.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2351.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2353.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2355.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2357.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2359.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2362.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2363.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2368.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2370.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2371.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2373.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2377.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2380.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2381.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2384.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2386.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2388.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2394.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2397.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2403.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2405.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2408.jpeg" class="slide-apto" />
+            <img src="assets/img/APTO101/IMG_2410.jpeg" class="slide-apto" />
           </div>
           <button class="seta direita"><p>&#10095;</p></button>
         </div>
@@ -544,44 +543,44 @@ const conteudosApto = {
       <div class="cont-apts-slides">
         <div class="slider">
           <button class="seta esquerda"><p>&#10094;</p></button>
-          <div class="slides">
+          <div class="slidesApto">
             <img
               src="assets/img/img-carrosselApto/IMG_2377-apt1.jpeg"
-              class="slide active"
+              class="slide-apto active"
             />
             <img
               src="assets/img/img-carrosselApto/IMG_2382-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/IMG_2385-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/IMG_2386-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
-            <img src="assets/img/img-carrosselApto/IMG_2390-apt1.jpeg" class="slide" />
-            <img src="assets/img/img-carrosselApto/IMG_2395-apt1.jpeg" class="slide" />
+            <img src="assets/img/img-carrosselApto/IMG_2390-apt1.jpeg" class="slide-apto" />
+            <img src="assets/img/img-carrosselApto/IMG_2395-apt1.jpeg" class="slide-apto" />
             <img
               src="assets/img/img-carrosselApto/IMG_2396-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/IMG_2403-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/IMG_2406-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/IMG_2409-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/IMG_2411-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
           </div>
           <button class="seta direita"><p>&#10095;</p></button>
@@ -644,74 +643,74 @@ const conteudosApto = {
       <div class="cont-apts-slides">
         <div class="slider">
           <button class="seta esquerda"><p>&#10094;</p></button>
-          <div class="slides">
+          <div class="slidesApto">
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2414-apt1.jpeg"
-              class="slide active"
+              class="slide-apto active"
             />
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2420-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2424-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2426-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2429-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2432-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2436-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2437-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2446-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2439-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2440-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2447-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2451-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2458-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2406-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2409-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
             <img
               src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2411-apt1.jpeg"
-              class="slide"
+              class="slide-apto"
             />
           </div>
           <button class="seta direita"><p>&#10095;</p></button>
@@ -806,7 +805,7 @@ function mostrarApto(nomeApto) {
 
 	// Inicializa carrossel(s) depois de inserir
 	setTimeout(() => {
-		const sliders = areaExpansivelApto.querySelectorAll(".slider");
+		const sliders = areaExpansivelApto.querySelectorAll(".sliderApto");
 		sliders.forEach((slider) => initUmCarousel(slider)); // sua função do carrossel
 	}, 200);
 }
