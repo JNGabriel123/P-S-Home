@@ -63,6 +63,30 @@
 		}
 	}
 
+	/**######################################*/
+	/**         Sub-container ao redor       */
+	/**######################################*/
+
+	.icon-loczIcon_textSupMerc img {
+		width: clamp(20px, 15vw, 60px);
+	}
+
+	.lclcoes-SupMerc-item img {
+		width: clamp(20px, 15vw, 40px);
+	}
+
+	.cont-iframeMaps img {
+		width: clamp(50px, 20vw, 70px);
+		top: 3%;
+		left: 90%;
+	}
+
+	.sub-cont-iframeMaps iframe {
+		width: clamp(300px, 80vw, 500px);
+		height: clamp(200px, 90vh, 1400px);
+	}
+	/*~ icone Ao Redor */
+
 	/*?######################################*/
 	/*?               section 04             */
 	/*?######################################*/
@@ -204,6 +228,63 @@
 		width: clamp(10px, 16vw, 220px);
 	}
 
+	/**######################################*/
+	/**         Sub-container ao redor       */
+	/**######################################*/
+
+	.sub-secao-aoRedor-supermercados,
+	.sub-secao-aoRedor-restaurantes,
+	.sub-secao-aoRedor-farmacias,
+	.sub-secao-aoRedor-postos {
+		margin-bottom: 0;
+	}
+
+	.sub-cont-supMerc {
+		min-height: 0px;
+	}
+
+	.cont-loczIcon_textSupMerc {
+		min-height: 0;
+	}
+
+	.icon-loczIcon_textSupMerc img {
+		width: clamp(20px, 15vw, 60px);
+	}
+
+	.lclcoes-SupMerc-item {
+		margin-bottom: 3vh;
+
+		span {
+			line-height: 1.4;
+			font-size: clamp(1.2rem, 1.8vw, 2rem);
+		}
+	}
+
+	.lclcoes-SupMerc-item img {
+		width: clamp(20px, 15vw, 40px);
+	}
+
+	.lclcoes-SupMerc-item ul {
+		margin-left: 1.1rem;
+		font-size: CLAMP(1.6rem, 2vw, 2.5rem);
+	}
+
+	.cont-iframeMaps {
+		height: 0%;
+	}
+
+	.cont-iframeMaps img {
+		width: clamp(50px, 20vw, 80px);
+		top: 2%;
+		left: 80%;
+	}
+
+	.sub-cont-iframeMaps iframe {
+		width: clamp(300px, 80vw, 400px);
+		height: clamp(200px, 90vh, 900px);
+	}
+	/*~ icone Ao Redor */
+
 	/*?######################################*/
 	/*?               section 03             */
 	/*?######################################*/
@@ -214,7 +295,6 @@
 
 	.cont-textMWrapper span {
 		font-size: clamp(1.6rem, 1.5vw, 2.5rem);
-		
 	}
 
 	.mapa-wrapper iframe {
@@ -369,6 +449,52 @@
 	.grid-boxIcon-sct02 img {
 		width: clamp(10px, 16vw, 240px);
 	}
+
+	/**######################################*/
+	/**         Sub-container ao redor       */
+	/**######################################*/
+
+	.sub-cont-supMerc {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.cont-loczIcon_textSupMerc {
+		width: 90%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.icon-loczIcon_textSupMerc {
+		margin-bottom: 4vh;
+	}
+
+	.icon-loczIcon_textSupMerc img {
+		width: clamp(20px, 15vw, 60px);
+	}
+
+	.lclcoes-SupMerc-item {
+		span {
+			font-size: clamp(1.5rem, 1.4vw, 2rem);
+		}
+	}
+
+	.lclcoes-SupMerc-item img {
+		width: clamp(20px, 15vw, 50px);
+	}
+
+	.cont-iframeMaps img {
+		width: clamp(50px, 20vw, 80px);
+		top: 2%;
+		left: 90%;
+	}
+
+	.sub-cont-iframeMaps iframe {
+		margin: 5% 3%;
+		width: clamp(300px, 90vw, 800px);
+		height: clamp(200px, 70vh, 900px);
+	}
+	/*~ icone Ao Redor */
 
 	/*?######################################*/
 	/*?               section 03             */
@@ -556,6 +682,55 @@
 	.grid-boxIcon-sct02 img {
 		width: clamp(10px, 18vw, 250px);
 	}
+
+	/**######################################*/
+	/**         Sub-container ao redor       */
+	/**######################################*/
+
+	.sub-cont-supMerc {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.cont-loczIcon_textSupMerc {
+		width: 90%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.icon-loczIcon_textSupMerc {
+		margin-bottom: 4vh;
+
+		img {
+			max-width: clamp(10px, 8vw, 50px);
+			height: auto;
+		}
+	}
+
+	.lclcoes-SupMerc-item {
+		gap: 1.5rem;
+		ul {
+			font-size: clamp(1.2rem, 1.4vw, 2rem);
+		}
+		span {
+			font-size: clamp(1rem, 1.4vw, 2rem);
+		}
+	}
+
+	.lclcoes-SupMerc-item img {
+		width: clamp(20px, 15vw, 30px);
+	}
+
+	.cont-iframeMaps img {
+		width: clamp(50px, 20vw, 30px);
+		top: 2%;
+		left: 88%;
+	}
+
+	.sub-cont-iframeMaps iframe {
+		height: clamp(200px, 50vh, 900px);
+	}
+	/*~ icone Ao Redor */
 
 	/*?######################################*/
 	/*?               section 03             */
@@ -757,6 +932,62 @@
 	.grid-boxIcon-sct02 img {
 		width: clamp(10px, 18vw, 250px);
 	}
+
+	/**######################################*/
+	/**         Sub-container ao redor       */
+	/**######################################*/
+
+	.sub-cont-supMerc {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.cont-loczIcon_textSupMerc {
+		width: 95%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.icon-loczIcon_textSupMerc {
+		margin-bottom: 4vh;
+	}
+
+	.icon-loczIcon_textSupMerc {
+		gap: 0.5rem;
+		img {
+			width: clamp(20px, 10vw, 30px);
+		}
+
+		h1 {
+			font-size: clamp(1.2rem, 1.4vw, 2rem);
+		}
+	}
+
+	.lclcoes-SupMerc-item {
+		ul {
+			font-size: clamp(1rem, 1.4vw, 2rem);
+		}
+		span {
+			font-size: clamp(1rem, 1.4vw, 2rem);
+		}
+	}
+
+	.lclcoes-SupMerc-item img {
+		width: clamp(20px, 15vw, 30px);
+	}
+
+	.cont-iframeMaps img {
+		width: clamp(40px, 20vw, 40px);
+		top: 2%;
+		left: 88%;
+	}
+
+	.sub-cont-iframeMaps iframe {
+		margin: 5% 3%;
+		width: clamp(300px, 90vw, 800px);
+		height: clamp(200px, 70vh, 900px);
+	}
+	/*~ icone Ao Redor */
 
 	/*?######################################*/
 	/*?               section 03             */

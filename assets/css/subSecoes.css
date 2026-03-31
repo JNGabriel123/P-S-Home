@@ -15,7 +15,7 @@
 
 .area-conteudo-expansivel.aberto {
 	padding: clamp(1.5rem, 4vw, 3rem) 5%;
-	min-height: clamp(200px, 120vh, 1000px);
+	min-height: clamp(200px, 120vh, 1500px);
 }
 /** ajuste expansivel */
 
@@ -599,7 +599,7 @@
 /*######################################*/
 @media (max-width: 1024px) {
 	.area-conteudo-expansivel.aberto {
-		min-height: clamp(200px, 130vh, 900px);
+		min-height: clamp(120px, 90vh, 600px);
 	}
 
 	/*!######################################*/
@@ -659,12 +659,10 @@
 	/*!               ao redor               */
 	/*!######################################*/
 	.secao-aoRedor {
-		min-height: clamp(300px, 30vh, 800px);
+		min-height: clamp(300px, 30vh, 600px);
 	}
 
 	.cont-aoRedor {
-		width: 100%;
-		margin-top: 0;
 		min-height: clamp(100px, 20vh, 600px);
 	}
 
@@ -677,12 +675,11 @@
 	}
 
 	.sub-cont-aoRedor {
-		min-height: clamp(150px, 50vh, 800px);
+		min-height: clamp(150px, 50vh, 400px);
 	}
 
 	.sub-cont-aoRedor img {
 		width: clamp(20px, 60vw, 120px);
-		height: auto;
 	}
 
 	/*!######################################*/
@@ -783,7 +780,7 @@
 	}
 
 	.secao-turismo {
-		height: clamp(200px, 55vh, 1200px);
+		height: clamp(200px, 65vh, 1200px);
 		max-width: clamp(100px, 120vw, 1300px);
 	}
 
@@ -803,7 +800,7 @@
 	}
 
 	.local-cont {
-		width: clamp(150px, 100vw, 240px);
+		width: clamp(150px, 100vw, 300px);
 		height: clamp(40px, 3vh, 60px);
 	}
 
@@ -812,8 +809,8 @@
 	}
 
 	.local-cont a {
-		font-size: clamp(1rem, 2vw, 2rem);
-		margin-left: 10px;
+		font-size: clamp(1.2rem, 2vw, 2rem);
+		margin-left: 18px;
 	}
 	/*!######################################*/
 	/*!               ao redor               */
@@ -941,7 +938,7 @@
 /*######################################*/
 @media (max-width: 480px) {
 	.area-conteudo-expansivel.aberto {
-		min-height: clamp(100px, 90vh, 900px);
+		min-height: clamp(80px, 80vh, 600px);
 	}
 
 	/*!######################################*/
@@ -954,7 +951,8 @@
 	}
 
 	.secao-turismo {
-		height: clamp(200px, 55vh, 1200px);
+		margin-top: 15%;
+		height: clamp(200px, 58vh, 1200px);
 		max-width: clamp(100px, 130vw, 1300px);
 	}
 
@@ -998,8 +996,12 @@
 		gap: 2rem;
 	}
 
-	.cont-iconLocaliza-aoRedor img {
-		width: clamp(20px, 10vw, 130px);
+	.cont-iconLocaliza-aoRedor  {
+		font-size: clamp(0.5rem, 1vw, 1.5rem);
+
+		img {
+			width: clamp(10px, 8vw, 60px);
+		}
 	}
 
 	.cont-iconLocaliza-aoRedor h1 {
@@ -1011,17 +1013,17 @@
 	}
 
 	.sub-cont-aoRedor {
-		min-height: clamp(100px, 40vh, 1200px);
+		min-height: clamp(100px, 30vh, 800px);
 		grid-template-columns: repeat(2, 1fr);
 		gap: 0.5rem;
 	}
 
 	.sub-cont-aoRedor img {
-		width: 50%;
+		width: 35%;
 	}
 
 	.caixa-icons-aoRedor p {
-		font-size: clamp(1.1rem, 2.2vw, 2.8rem);
+		font-size: clamp(1rem, 2vw, 2.8rem);
 	}
 
 	.cont-text-aoRedor {
@@ -1029,8 +1031,7 @@
 	}
 
 	.cont-text-aoRedor h3 {
-		color: #002570;
-		margin-bottom: 1.5rem;
+		margin-bottom: 1.2rem;
 	}
 
 	/*!######################################*/
@@ -1134,7 +1135,7 @@
 /*######################################*/
 @media (max-width: 325px) {
 	.area-conteudo-expansivel.aberto {
-		min-height: clamp(380px, 210vh, 1300px);
+		min-height: clamp(380px, 210vh, 500px);
 	}
 
 	/*!######################################*/
@@ -1185,12 +1186,14 @@
 		gap: 2rem;
 	}
 
-	.cont-iconLocaliza-aoRedor img {
-		width: clamp(20px, 10vw, 130px);
-	}
-
-	.cont-iconLocaliza-aoRedor h1 {
-		font-size: clamp(2rem, 4vw, 3.5rem);
+	.cont-iconLocaliza-aoRedor {
+		gap: 0.5rem;
+		img {
+			width: clamp(20px, 10vw, 130px);
+		}
+		h1 {
+			font-size: clamp(1.5rem, 4vw, 3.5rem);
+		}
 	}
 
 	.sub-cont-aoRedor {
@@ -1204,11 +1207,11 @@
 	}
 
 	.sub-cont-aoRedor img {
-		width: 50%;
+		width: 40%;
 	}
 
 	.caixa-icons-aoRedor p {
-		font-size: clamp(1.1rem, 2.2vw, 2.8rem);
+		font-size: clamp(1rem, 1.8vw, 2rem);
 	}
 
 	.cont-text-aoRedor {

@@ -37,35 +37,44 @@ let subsecaoAtual = null; // qual sub-seção de "Ao Redor" está aberta
 const conteudos = {
 	turismo: `
   <section class="secao-turismo">
-    <img src="assets/img/icons/icons-sect02-02.png" alt="" class="img-icon-slider" />
+    <img
+      src="assets/img/icons/icons-sect02-02.png"
+      alt=""
+      class="img-icon-slider" />
     <div class="slider">
       <button class="seta esquerda"><p>&#10094;</p></button>
 
       <div class="slides">
         <img
-          src="assets/img/img-carrosselSect1/4 CACHOEIRAS 4.png"
+          src="assets/img/img-carrosselSect1/BALNEARIO RIO VERDE.jpeg"
           class="slide active" />
         <img src="assets/img/img-carrosselSect1/SALTO BELO 1.png" class="slide" />
+        <img
+          src="assets/img/img-carrosselSect1/SALTO UTIARITI. 2.png"
+          class="slide" />
         <img
           src="assets/img/img-carrosselSect1/SALTO DA MULHER 1.png"
           class="slide" />
         <img
-          src="assets/img/img-carrosselSect1/PONTE DE PEDRA 2.png"
-          class="slide" />
-        <img
-          src="assets/img/img-carrosselSect1/PONTE DE PEDRA 4.png"
-          class="slide" />
-        <img src="assets/img/img-carrosselSect1/4 CACHOEIRAS 2.png" class="slide" />
-        <img
-          src="assets/img/img-carrosselSect1/ALDEIA 4 CACHOEIRAS.jpg"
+          src="assets/img/img-carrosselSect1/RAFTING RIO SACRE.jpg"
           class="slide" />
         <img src="assets/img/img-carrosselSect1/RIO SACRE 1.png" class="slide" />
         <img
-          src="assets/img/img-carrosselSect1/CHAPADA AZUL 3.png"
+          src="assets/img/img-carrosselSect1/PONTE DE PEDRA 1.png"
+          class="slide" />
+        <img
+          src="assets/img/img-carrosselSect1/PONTE DE PEDRA 5.png"
+          class="slide" />
+        <img
+          src="assets/img/img-carrosselSect1/ALDEIA WAZZARE.jpeg"
           alt=""
           class="slide" />
         <img
-          src="assets/img/img-carrosselSect1/SALTO UTIARITI. 2.png"
+          src="assets/img/img-carrosselSect1/4 CACHOEIRAS 1.png"
+          alt=""
+          class="slide" />
+        <img
+          src="assets/img/img-carrosselSect1/CHAPADA AZUL 2.png"
           alt=""
           class="slide" />
       </div>
@@ -311,36 +320,6 @@ const conteudos = {
       </div>
     </section>
   `,
-	contatos: `
-  <section class="sect-contat">
-      <div class="cont-sect-contat">
-        <div class="img-logo-PeS">
-          <img src="Imagens/LOGO P&S HOME.png" alt="" />
-        </div>
-        <div class="cent-textContat">
-          <div class="box-textContat">
-            <p>atendimento: <b>06h às 22h</b> | <b>Paulo Nogueira</b></p>
-          </div>
-          <div class="box-textContat links-contat">
-            <p>
-              <a
-                href="https://wa.me/65998090170?text=Ol%C3%A1!%20Quero%20saber%20mais"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Abrir conversa no WhatsApp"
-              >
-                (65) <b>99809-0170</b></a
-              >
-              <img src="Icons/whatsappicon.png" alt="Telefone" /> |
-              <a href="mailto:paulocnogueira73@gmail.com"
-                ><b>paulocnogueira73@gmail.com</b></a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  `,
 };
 
 // =============================================
@@ -539,232 +518,151 @@ const conteudosApto = {
 
 	apt02: `
   <section class="sect-apts-01-slides">
-      <img src="assets/img/icons/icon-apt-102.png" alt="" class="img-icon-slider" />
-      <div class="cont-apts-slides">
-        <div class="slider">
-          <button class="seta esquerda"><p>&#10094;</p></button>
-          <div class="slidesApto">
-            <img
-              src="assets/img/img-carrosselApto/IMG_2377-apt1.jpeg"
-              class="slide-apto active"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2382-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2385-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2386-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img src="assets/img/img-carrosselApto/IMG_2390-apt1.jpeg" class="slide-apto" />
-            <img src="assets/img/img-carrosselApto/IMG_2395-apt1.jpeg" class="slide-apto" />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2396-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2403-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2406-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2409-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/IMG_2411-apt1.jpeg"
-              class="slide-apto"
-            />
+    <img src="assets/img/icons/icon-apt-102.png" alt="" class="img-icon-slider" />
+    <div class="cont-apts-slides">
+      <div class="sliderApto">
+        <button class="seta esquerda"><p>&#10094;</p></button>
+        <div class="slidesApto">
+          <img src="assets/img/APTO102/IMG_2413.jpeg" class="slide-apto active" />
+          <img src="assets/img/APTO102/IMG_2416.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO102/IMG_2417.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO102/IMG_2427.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO102/IMG_2429.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO102/IMG_2431.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO102/IMG_2436.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO102/IMG_2437.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO102/IMG_2438.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO102/IMG_2440.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO102/IMG_2443.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO102/IMG_2448.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO102/IMG_2450.jpeg" class="slide-apto" />
+        </div>
+        <button class="seta direita"><p>&#10095;</p></button>
+      </div>
+    </div>
+    <div class="cont-itens-info-apt">
+      <div class="sub-cont-info-apt">
+        <div class="itens-info-apt">
+          <div class="grid-itemSct01">
+            <img src="assets/img/icons/icon-01-blocoBaixo.png" alt="" />
           </div>
-          <button class="seta direita"><p>&#10095;</p></button>
+          <span>
+            <p>Apt. mobilhado</p>
+            <p>e climatizado</p>
+          </span>
+        </div>
+        <div class="itens-info-apt">
+          <div class="grid-itemSct01">
+            <img src="assets/img/icons/icon-02-blocoBaixo.png" alt="" />
+          </div>
+          <span>
+            <p>Cozinha</p>
+            <p>completa</p>
+          </span>
+        </div>
+        <div class="itens-info-apt-03">
+          <div class="grid-itemSct01">
+            <img src="assets/img/icons/icon-03-blocoBaixo.png" alt="" />
+          </div>
+          <span>
+            <p>Wi-Fi</p>
+          </span>
+        </div>
+        <div class="itens-info-apt">
+          <div class="grid-itemSct01">
+            <img src="assets/img/icons/icon-04-blocoBaixo.png" alt="" />
+          </div>
+          <span>
+            <p>Roupas de</p>
+            <p>cama e banho</p>
+          </span>
+        </div>
+        <div class="itens-info-apt">
+          <div class="grid-itemSct01">
+            <img src="assets/img/icons/icon-05-blocoBaixo.png" alt="" />
+          </div>
+          <span>
+            <p>Campo Novo</p>
+            <p>do Parecis-MT</p>
+          </span>
         </div>
       </div>
-      <div class="cont-itens-info-apt">
-        <div class="sub-cont-info-apt">
-          <div class="itens-info-apt">
-            <div class="grid-itemSct01">
-              <img src="assets/img/icons/icon-01-blocoBaixo.png" alt="" />
-            </div>
-            <span>
-              <p>Apt. mobilhado</p>
-              <p>e climatizado</p>
-            </span>
-          </div>
-          <div class="itens-info-apt">
-            <div class="grid-itemSct01">
-              <img src="assets/img/icons/icon-02-blocoBaixo.png" alt="" />
-            </div>
-            <span>
-              <p>Cozinha</p>
-							<p>completa</p>
-            </span>
-          </div>
-          <div class="itens-info-apt-03">
-            <div class="grid-itemSct01">
-              <img src="assets/img/icons/icon-03-blocoBaixo.png" alt="" />
-            </div>
-            <span>
-              <p>Wi-Fi</p>
-            </span>
-          </div>
-          <div class="itens-info-apt">
-            <div class="grid-itemSct01">
-              <img src="assets/img/icons/icon-04-blocoBaixo.png" alt="" />
-            </div>
-            <span>
-              <p>Roupas de</p>
-							<p>cama e banho</p>
-            </span>
-          </div>
-          <div class="itens-info-apt">
-           <div class="grid-itemSct01">
-              <img src="assets/img/icons/icon-05-blocoBaixo.png" alt="" />
-            </div>
-            <span>
-              <p>Campo Novo</p>
-							<p>do Parecis-MT</p>
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
   `,
 
 	apt03: `
   <section class="sect-apts-01-slides">
-      <img src="assets/img/icons/icon-apt-103.png" alt="" class="img-icon-slider" />
-      <div class="cont-apts-slides">
-        <div class="slider">
-          <button class="seta esquerda"><p>&#10094;</p></button>
-          <div class="slidesApto">
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2414-apt1.jpeg"
-              class="slide-apto active"
-            />
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2420-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2424-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2426-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2429-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2432-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2436-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2437-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2446-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2439-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2440-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2447-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2451-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2458-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2406-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2409-apt1.jpeg"
-              class="slide-apto"
-            />
-            <img
-              src="assets/img/img-carrosselApto/Carrossel-apts/IMG_2411-apt1.jpeg"
-              class="slide-apto"
-            />
+    <img src="assets/img/icons/icon-apt-103.png" alt="" class="img-icon-slider" />
+    <div class="cont-apts-slides">
+      <div class="sliderApto">
+        <button class="seta esquerda"><p>&#10094;</p></button>
+        <div class="slidesApto">
+          <img
+            src="assets/img/APTO103/Cópia de IMG_2432.jpeg"
+            class="slide-apto active" />
+          <img src="assets/img/APTO103/Cópia de IMG_2435.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO103/Cópia de IMG_2437.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO103/Cópia de IMG_2439.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO103/Cópia de IMG_2440.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO103/Cópia de IMG_2443.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO103/Cópia de IMG_2447.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO103/Cópia de IMG_2451.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO103/IMG_2452.jpeg" class="slide-apto" />
+          <img src="assets/img/APTO103/IMG_2457.jpeg" class="slide-apto" />
+        </div>
+        <button class="seta direita"><p>&#10095;</p></button>
+      </div>
+    </div>
+    <div class="cont-itens-info-apt">
+      <div class="sub-cont-info-apt">
+        <div class="itens-info-apt">
+          <div class="grid-itemSct01">
+            <img src="assets/img/icons/icon-01-blocoBaixo.png" alt="" />
           </div>
-          <button class="seta direita"><p>&#10095;</p></button>
+          <span>
+            <p>Apt. mobilhado</p>
+            <p>e climatizado</p>
+          </span>
+        </div>
+        <div class="itens-info-apt">
+          <div class="grid-itemSct01">
+            <img src="assets/img/icons/icon-02-blocoBaixo.png" alt="" />
+          </div>
+          <span>
+            <p>Cozinha</p>
+            <p>completa</p>
+          </span>
+        </div>
+        <div class="itens-info-apt-03">
+          <div class="grid-itemSct01">
+            <img src="assets/img/icons/icon-03-blocoBaixo.png" alt="" />
+          </div>
+          <span>
+            <p>Wi-Fi</p>
+          </span>
+        </div>
+        <div class="itens-info-apt">
+          <div class="grid-itemSct01">
+            <img src="assets/img/icons/icon-04-blocoBaixo.png" alt="" />
+          </div>
+          <span>
+            <p>Roupas de</p>
+            <p>cama e banho</p>
+          </span>
+        </div>
+        <div class="itens-info-apt">
+          <div class="grid-itemSct01">
+            <img src="assets/img/icons/icon-05-blocoBaixo.png" alt="" />
+          </div>
+          <span>
+            <p>Campo Novo</p>
+            <p>do Parecis-MT</p>
+          </span>
         </div>
       </div>
-      <div class="cont-itens-info-apt">
-        <div class="sub-cont-info-apt">
-          <div class="itens-info-apt">
-            <div class="grid-itemSct01">
-              <img src="assets/img/icons/icon-01-blocoBaixo.png" alt="" />
-            </div>
-            <span>
-              <p>Apt. mobilhado</p>
-              <p>e climatizado</p>
-            </span>
-          </div>
-          <div class="itens-info-apt">
-            <div class="grid-itemSct01">
-              <img src="assets/img/icons/icon-02-blocoBaixo.png" alt="" />
-            </div>
-            <span>
-              <p>Cozinha</p>
-							<p>completa</p>
-            </span>
-          </div>
-          <div class="itens-info-apt-03">
-            <div class="grid-itemSct01">
-              <img src="assets/img/icons/icon-03-blocoBaixo.png" alt="" />
-            </div>
-            <span>
-              <p>Wi-Fi</p>
-            </span>
-          </div>
-          <div class="itens-info-apt">
-            <div class="grid-itemSct01">
-              <img src="assets/img/icons/icon-04-blocoBaixo.png" alt="" />
-            </div>
-            <span>
-              <p>Roupas de</p>
-							<p>cama e banho</p>
-            </span>
-          </div>
-          <div class="itens-info-apt">
-            <div class="grid-itemSct01">
-              <img src="assets/img/icons/icon-05-blocoBaixo.png" alt="" />
-            </div>
-            <span>
-              <p>Campo Novo</p>
-							<p>do Parecis-MT</p>
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
   `,
 };
 
