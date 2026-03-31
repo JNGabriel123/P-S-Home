@@ -972,7 +972,7 @@
 	}
 
 	.local-cont {
-		width: clamp(150px, 60vw, 210px);
+		width: clamp(130px, 50vw, 180px);
 	}
 
 	.local-cont img {
